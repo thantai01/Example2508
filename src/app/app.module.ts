@@ -10,16 +10,18 @@ import { CategoryCreateComponent } from './category-create/category-create.compo
 import {ReactiveFormsModule} from '@angular/forms';
 import { CategoryEditComponent } from './category-edit/category-edit.component';
 import { CategoryDeleteComponent } from './category-delete/category-delete.component';
+import {TodoComponent} from './todo/Todo-list/todo.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UserComponent,
-    CategoryComponent,
-    CategoryCreateComponent,
-    CategoryEditComponent,
-    CategoryDeleteComponent,
-  ],
+    declarations: [
+        AppComponent,
+        UserComponent,
+        CategoryComponent,
+        CategoryCreateComponent,
+        CategoryEditComponent,
+        CategoryDeleteComponent,
+        TodoComponent,
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
