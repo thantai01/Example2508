@@ -1,0 +1,23 @@
+<h2 class="text-center">
+  Todo App
+</h2>
+<div class="col-md-8 offset-md-2">
+  <input type="text" class="form-control" [formControl]="content" (change)="change()">
+  <ul (click)="toggleTodo(i)"
+      [class.complete]="todo.complete"
+      *ngFor="let todo of todos; index as i">
+    <li >
+      {{todo.content}}
+    </li>
+    <li>
+      <button (click)="onBtn()">Edit</button>
+      <button (click)="deleteItem(todo.id)">delete</button>
+    </li>
+    <li *ngIf="hide">
+      <form [formGroup]="formEdit" >
+        <input type="text" formControlName="content">
+        <button (click)="onBtn() ; updateId(todo.id)">Save</button>
+      </form>
+    </li>
+  </ul>
+</div>
