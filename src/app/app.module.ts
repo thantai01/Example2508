@@ -11,6 +11,9 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { CategoryEditComponent } from './category-edit/category-edit.component';
 import { CategoryDeleteComponent } from './category-delete/category-delete.component';
 import {TodoComponent} from './todo/Todo-list/todo.component';
+import { BookListComponent } from './book-list/book-list.component';
+import { BookEditComponent } from './book-edit/book-edit.component';
+import { BookCreateComponent } from './book-create/book-create.component';
 
 @NgModule({
     declarations: [
@@ -21,6 +24,9 @@ import {TodoComponent} from './todo/Todo-list/todo.component';
         CategoryEditComponent,
         CategoryDeleteComponent,
         TodoComponent,
+        BookListComponent,
+        BookEditComponent,
+        BookCreateComponent,
     ],
   imports: [
     BrowserModule,

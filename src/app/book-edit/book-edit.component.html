@@ -1,0 +1,23 @@
+<p>book-edit works!</p>
+<div class="container">
+  <h3>Edit Book</h3>
+  <form class="form-control" [formGroup]="bookForm" (ngSubmit)="edit(id)" >
+    <div class="row mt-1 p-2">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="title" formControlName="title"/>
+    </div>
+    <div class="row mt-1 p-2">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" formControlName="author"/>
+    </div>
+    <div class="row mt-1 p-2">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" id="description" formControlName="description"/>
+    </div>
+    <div class="row mt-1 p-2">
+      <div class="col-2">
+        <input type="submit" value="Add new Book">
+      </div>
+    </div>
+  </form>
+</div>
